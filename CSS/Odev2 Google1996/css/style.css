@@ -1,0 +1,32 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    display: block;
+    text-align: -webkit-center;
+}
+
+table {
+    width: 90%;
+}
+
+tr:first-child {
+    background-color: #EEEEEE;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+td {
+    text-align: center;
+}
+
+#copyright {
+
+}
