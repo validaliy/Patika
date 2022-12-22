@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Çiftçi Programı | Ana Sayfa</title>
+    <title>Pil</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -35,66 +36,48 @@
         </nav>
 
     </header>
-
     <br>
-    <div class="container">
-        <section row>
-            <table class="col-md-8 table table-bordered">
-                <thead>
-                    <tr>
-                        <th scope="col">Tanım</th>
-                        <th scope="col">Açıklama</th>
-                        <th scope="col">tarih</th>
-                        <th scope="col">Maliyet</th>
-                    </tr>
-                    <tr>
-                        <td>Gübre</td>
-                        <td>Can26</td>
-                        <td>06.06.2022</td>
-                        <td>30000</td>
-                    </tr>
-                    <tr>
-                        <td>Gübre</td>
-                        <td>Üst Üre</td>
-                        <td>10.08.2022</td>
-                        <td>50000</td>
-                    </tr>
-                    <tr>
-                        <td>Akaryakıt</td>
-                        <td>Mazot</td>
-                        <td>04.06.2022</td>
-                        <td>10000</td>
-                    </tr>
-                    <tr>
-                        <td>İlaç</td>
-                        <td>Coragen</td>
-                        <td>18.07.2022</td>
-                        <td>6000</td>
-                    </tr>
-                </thead>
-            </table>
-            <p style="text-align: right;">Toplam maliyet: 96000 </p>
-        </section>
+    <main class="container">
 
-        <footer>
-            <hr>
-            <p>Adres:
-            <address>Atatürk Mah. Akçakale Şanlıurfa</address>
-            </p>
+        <div class="row mt-0">
 
-        </footer>
+            <div id="pil">
+                <h5 id="yuzde">80%</h5>
+                <div id="yesil"></div>
+            </div>
+        </div>
 
-    </div>
-    <!--container-->
+        <div class="row mt-0 mx-2 mx-sm-auto">
+            <input class="col-md-4 offset-md-4" onchange="pil(0)" type="number" name="deger" id="deger"><br>
+            <button class="col-4 col-md-2 offset-4 offset-md-5 btn btn-success mt-3" onclick="pil(0)">BAs</button>
+        </div>
 
+        <div class="row m-2">
+            <h1 class="bg-success d-sm-none">Lorem, ipsum.</h1>
+            <h1 class="bg-warning d-none d-sm-block d-md-none">Animi, alias.</h1>
+            <h1 class="bg-info d-none d-md-block d-lg-none">Officiis, ad.</h1>
+            <h1 class="bg-primary d-none">Facere, quisquam!</h1>
+            <h1 class="bg-secondary d-none">Veritatis, ipsa?</h1>
+        </div>
 
+        <div class="row ortala">
 
+            <div class="yuvarlak"></div>
+            <div class="yuvarlak bg-info"></div>
+            <div class="yuvarlak bg-warning"></div>
+            <div class="yuvarlak bg-success"></div>
+            <div class="yuvarlak bg-secondary"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
