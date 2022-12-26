@@ -1,0 +1,23 @@
+body {
+    padding-top: 77px;
+}
+nav li a {
+    color: black;
+}
+
+.altcizgi {
+    border: 0;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 7rem;
+}
+
+.haha:hover {
+    background-color: red !important;
+    color: black;
+}
